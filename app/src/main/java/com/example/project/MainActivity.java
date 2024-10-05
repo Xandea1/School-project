@@ -26,21 +26,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        CardView google =  findViewById(R.id.google_sign_in);
-        CardView email = findViewById(R.id.email_sign_in);
 
-        google.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "You signed in google account", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        email.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                email.setVisibility(View.GONE);
-            }
-        });
+
     }
 }
